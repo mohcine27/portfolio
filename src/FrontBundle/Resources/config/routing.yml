@@ -1,0 +1,15 @@
+front_homepage:
+    path:     /accueil  
+    defaults: { _controller: FrontBundle:Front:index }
+    
+front_projectspage:
+    path:     /projets/{id}  
+    defaults: { _controller: FrontBundle:Front:index }
+    requirements:
+        id: \d+
+
+front_portfoliopage:
+    path:     /portfolio
+    defaults: { _controller: FrontBundle:Front:index }
+
+
